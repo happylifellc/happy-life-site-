@@ -16,40 +16,11 @@
   <!-- Top Bar -->
   <div class="w-full bg-emerald-800 text-white text-sm">
     <div class="container mx-auto px-4 py-2 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-      <p class="font-medium">
-    <!-- News Ticker Start -->
-    <div class="ticker" style="background:#333;color:#fff;padding:8px;overflow:hidden;white-space:nowrap;">
-      <div id="ticker-text" style="display:inline-block;animation:scroll 25s linear infinite;"></div>
-    </div>
-    <style>
-    @keyframes scroll {
-      from { transform: translateX(100%); }
-      to { transform: translateX(-100%); }
-    }
-    </style>
-    <script>
-      const newsItems = [
-        { title: 'Dallas home just renovated for new residents', url: 'news/dallas-renovation.html' },
-        { title: 'Albany site now fully staffed and operational', url: 'news/albany-opening.html' },
-        { title: 'Happy Life receives outstanding care rating for 2025', url: 'news/quality-rating.html' }
-      ];
-      const ticker = document.getElementById('ticker-text');
-      newsItems.forEach(item => {
-        const link = document.createElement('a');
-        link.href = item.url;
-        link.textContent = item.title + '   ';
-        link.style.color = '#fff';
-        link.style.textDecoration = 'none';
-        link.style.marginRight = '50px';
-        ticker.appendChild(link);
-      });
-    </script>
-    <!-- News Ticker End -->
-    </p>
+      <p class="font-medium">Now welcoming referrals in Marion, Polk, and Linn Counties</p>
       <div class="flex items-center gap-5">
-        <a href="#refer" class="underline underline-offset-4 hover:no-underline"></a>
-        <a href="#careers" class="underline underline-offset-4 hover:no-underline"></a>
-        <a href="#contact" class="underline underline-offset-4 hover:no-underline"></a>
+        <a href="#refer" class="underline underline-offset-4 hover:no-underline">Make a Referral</a>
+        <a href="#careers" class="underline underline-offset-4 hover:no-underline">Careers</a>
+        <a href="#contact" class="underline underline-offset-4 hover:no-underline">Contact</a>
       </div>
     </div>
   </div>
@@ -77,8 +48,8 @@
         <a href="#team" class="hover:text-emerald-800">Team</a>
         <a href="#admissions" class="hover:text-emerald-800">Admissions</a>
         <a href="#standards" class="hover:text-emerald-800">Standards</a>
-        <a href="#careers" class="hover:text-emerald-800"></a>
-        <a href="#contact" class="hover:text-emerald-800"></a>
+        <a href="#careers" class="hover:text-emerald-800">Careers</a>
+        <a href="#contact" class="hover:text-emerald-800">Contact</a>
       </nav>
     </div>
   </header>
@@ -243,7 +214,7 @@
     </div>
   </section>
 
-  <!--  -->
+  <!-- Careers -->
   <section id="careers" class="bg-gray-50 border-t">
     <div class="container mx-auto px-4 py-12">
       <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Join the team</h2>
@@ -257,11 +228,11 @@
     </div>
   </section>
 
-  <!--  -->
+  <!-- Contact -->
   <section id="contact" class="border-t">
     <div class="container mx-auto px-4 py-12 grid lg:grid-cols-2 gap-10">
       <div>
-        <h2 class="text-2xl md:text-3xl font-bold tracking-tight"></h2>
+        <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Contact</h2>
         <div class="mt-4 text-gray-700 space-y-2">
           <p><span class="font-semibold">Phone:</span> (503) 509‑3703</p>
           <p><span class="font-semibold">Email:</span> <a class="underline" href="mailto:info@happylifellc.org">info@happylifellc.org</a></p>
