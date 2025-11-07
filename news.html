@@ -59,8 +59,8 @@
     </article>
   </main>
 
-  <!-- Footer (exactly same as main site) -->
-  <footer class="bg-emerald-900 text-emerald-50 mt-20">
+  <!-- Footer (exactly from main site) -->
+  <footer class="bg-emerald-900 text-emerald-50">
     <div class="container mx-auto px-4 py-10 grid md:grid-cols-4 gap-8 text-sm">
       <div class="col-span-2">
         <div class="flex items-center gap-3">
@@ -68,4 +68,48 @@
             <svg viewBox="0 0 48 48" class="w-full h-full" aria-hidden="true">
               <rect x="4" y="4" width="40" height="40" rx="9" class="fill-emerald-700"></rect>
               <path d="M14 30c6-1 8-9 10-9s4 8 10 9" class="fill-none stroke-white" stroke-width="3" stroke-linecap="round"></path>
-              <cir
+              <circle cx="24" cy="18" r="3" class="fill-white"></circle>
+            </svg>
+          </div>
+          <div class="font-semibold">Happy Life Group Homes</div>
+        </div>
+        <p class="mt-3 text-emerald-100">Small homes. Strong routines. Real progress.</p>
+        <p class="mt-2 text-emerald-200 text-sm">Family-operated in Oregon and licensed by the Department of Human Services.</p>
+      </div>
+
+      <div>
+        <div class="font-semibold">Navigation</div>
+        <ul class="mt-2 space-y-2">
+          <li><a href="index.html#about" class="hover:underline">About</a></li>
+          <li><a href="index.html#services" class="hover:underline">Services</a></li>
+          <li><a href="index.html#homes" class="hover:underline">Homes</a></li>
+          <li><a href="index.html#team" class="hover:underline">Team</a></li>
+          <li><a href="index.html#admissions" class="hover:underline">Admissions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-semibold">Get in touch</div>
+        <ul class="mt-2 space-y-2">
+          <li>(503) 509-3703</li>
+          <li><a class="underline" href="mailto:info@happylifellc.org">info@happylifellc.org</a></li>
+          <li>Keizer • Salem • Albany • Dallas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-emerald-800">
+      <div class="container mx-auto px-4 py-6 text-xs text-emerald-200 flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+        <div>© <span id="year"></span> Happy Life Group Homes. All rights reserved.</div>
+        <div class="flex flex-wrap gap-4">
+          <a href="/privacy.html" class="hover:underline">Privacy</a>
+          <a href="/accessibility.html" class="hover:underline">Accessibility</a>
+          <a href="/non-discrimination.html" class="hover:underline">Non-Discrimination</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
