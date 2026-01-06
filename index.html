@@ -267,7 +267,7 @@
       </div>
      <nav class="hidden md:flex items-center gap-6 text-sm">
   <a href="#about" class="hover:text-emerald-800">About</a>
-       <a href="#families">For Families</a>
+  <a href="#families" class="hover:text-emerald-800">For Families</a>
   <a href="#services" class="hover:text-emerald-800">Services</a>
   <a href="#homes" class="hover:text-emerald-800">Homes</a>
   <a href="#team" class="hover:text-emerald-800">Team</a>
@@ -494,20 +494,11 @@ Our leadership team visits every home weekly to review plans, coach staff, and k
       </div>
     </div>
   </section>
-
-  <!-- Hidden template forms for Netlify detection -->
-  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name"><input type="email" name="email"><textarea name="message"></textarea>
-  </form>
-  <form name="referral" data-netlify="true" netlify-honeypot="bot-field" hidden>
-    <input type="text" name="referrer"><input type="email" name="email"><textarea name="summary"></textarea>
-  </form>
-  
 <!-- FOR FAMILIES SECTION -->
 <!-- Add this section to your index.html, above the FAQ section -->
 <!-- Also add "For Families" link to your navigation: <a href="#families">For Families</a> -->
 
-<section id="families" class="py-16 md:py-24">
+<section id="families" class="py-16 md:py-24 bg-gray-50 border-t">
   <div class="max-w-4xl mx-auto px-6">
     
     <h2 class="text-3xl md:text-4xl font-semibold mb-6">For Families</h2>
@@ -560,9 +551,17 @@ Our leadership team visits every home weekly to review plans, coach staff, and k
 
   </div>
 </section>
+  <!-- Hidden template forms for Netlify detection -->
+  <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name"><input type="email" name="email"><textarea name="message"></textarea>
+  </form>
+  <form name="referral" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="text" name="referrer"><input type="email" name="email"><textarea name="summary"></textarea>
+  </form>
+  
   
 <!-- FAQ -->
-<section id="faq" class="border-t bg-gray-50">
+<section id="faq" class="border-t">
   <div class="container mx-auto px-4 py-12">
     <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Frequently Asked Questions</h2>
     <div class="mt-8 grid md:grid-cols-2 gap-8 text-gray-800">
