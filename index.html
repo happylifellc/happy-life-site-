@@ -24,25 +24,218 @@
   <style>html{scroll-behavior:smooth} .container{max-width:1120px}</style>
 
   <!-- Structured Data -->
-<!-- Service Schema -->
+<!-- 
+  SCHEMA MARKUP FOR HAPPY LIFE GROUP HOMES
+  
+  Add this entire block just before the closing </head> tag on your homepage.
+  For location-specific pages, you can use just the relevant LocalBusiness block.
+-->
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Residential and Behavioral Support Services for Adults with I/DD, Mental Health, and Aging & Physical Disabilities (APD)",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Happy Life Group Homes",
-    "url": "https://happylifellc.org",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Keizer • Salem • Albany • Dallas",
-      "addressRegion": "OR",
-      "addressCountry": "US"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://happylifellc.org/#organization",
+      "name": "Happy Life Group Homes",
+      "alternateName": "Happy Life LLC",
+      "url": "https://happylifellc.org",
+      "logo": "https://happylifellc.org/logo.png",
+      "description": "Licensed DD group homes and adult foster homes providing 24/7 nurse-guided residential care for adults with intellectual and developmental disabilities in Oregon's Mid-Willamette Valley.",
+      "telephone": "+1-503-509-3703",
+      "email": "info@happylifellc.org",
+      "areaServed": [
+        {
+          "@type": "County",
+          "name": "Marion County",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Oregon"
+          }
+        },
+        {
+          "@type": "County",
+          "name": "Polk County",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Oregon"
+          }
+        },
+        {
+          "@type": "County",
+          "name": "Linn County",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Oregon"
+          }
+        }
+      ],
+      "sameAs": []
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://happylifellc.org/#keizer-home",
+      "name": "Happy Life Group Homes - Keizer",
+      "image": "https://happylifellc.org/images/keizer-home.jpg",
+      "description": "Licensed group home providing 24/7 residential care for adults with intellectual and developmental disabilities in Keizer, Oregon.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2498 Aldine Ct",
+        "addressLocality": "Keizer",
+        "addressRegion": "OR",
+        "postalCode": "97303",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.9901,
+        "longitude": -123.0262
+      },
+      "telephone": "+1-503-509-3703",
+      "parentOrganization": {"@id": "https://happylifellc.org/#organization"},
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "Contact for details"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://happylifellc.org/#salem-39th",
+      "name": "Happy Life Group Homes - Salem (39th Ave)",
+      "description": "Licensed group home providing 24/7 residential care for adults with intellectual and developmental disabilities in Salem, Oregon.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3993 39th Ave",
+        "addressLocality": "Salem",
+        "addressRegion": "OR",
+        "postalCode": "97301",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-503-509-3703",
+      "parentOrganization": {"@id": "https://happylifellc.org/#organization"},
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://happylifellc.org/#salem-flintlock",
+      "name": "Happy Life Group Homes - Salem (Flintlock Dr)",
+      "description": "Licensed group home providing 24/7 residential care for adults with intellectual and developmental disabilities in Salem, Oregon.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4919 Flintlock Dr",
+        "addressLocality": "Salem",
+        "addressRegion": "OR",
+        "postalCode": "97301",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-503-509-3703",
+      "parentOrganization": {"@id": "https://happylifellc.org/#organization"},
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://happylifellc.org/#albany-home",
+      "name": "Happy Life Group Homes - Albany",
+      "description": "Licensed group home providing 24/7 residential care for adults with intellectual and developmental disabilities in Albany, Oregon.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "610 29th Ave SE",
+        "addressLocality": "Albany",
+        "addressRegion": "OR",
+        "postalCode": "97322",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-503-509-3703",
+      "parentOrganization": {"@id": "https://happylifellc.org/#organization"},
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://happylifellc.org/#dallas-home",
+      "name": "Happy Life Group Homes - Dallas",
+      "description": "Licensed group home providing 24/7 residential care for adults with intellectual and developmental disabilities in Dallas, Oregon.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "588 SE Walnut Ave",
+        "addressLocality": "Dallas",
+        "addressRegion": "OR",
+        "postalCode": "97338",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-503-509-3703",
+      "parentOrganization": {"@id": "https://happylifellc.org/#organization"},
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://happylifellc.org/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of care does Happy Life Group Homes provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We provide person-centered, nurse-led residential care for adults with intellectual and developmental disabilities (I/DD). Our homes offer 24/7 staffing, skill-building, and behavior support in small, homelike settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are your homes located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We operate licensed group homes and adult foster homes in Keizer, Salem, Albany, and Dallas, Oregon, serving Marion, Polk, and Linn Counties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can someone make a referral?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Referrals can be made by CDDP case managers, providers, families, or guardians through our secure online form or by calling (503) 509-3703."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you accept emergency placements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We review urgent placement needs on a case-by-case basis and coordinate quickly with CDDP teams and families when appropriate."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://happylifellc.org/#website",
+      "url": "https://happylifellc.org",
+      "name": "Happy Life Group Homes",
+      "publisher": {"@id": "https://happylifellc.org/#organization"}
     }
-  },
-  "areaServed": ["Marion County", "Polk County", "Linn County"],
-  "description": "Happy Life Group Homes provides 24/7 nurse-led residential and behavioral support services for adults with intellectual and developmental disabilities (I/DD), mental health challenges, and aging or physical support needs (APD)."
+  ]
 }
 </script>
 
